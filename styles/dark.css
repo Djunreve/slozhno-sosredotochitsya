@@ -1,12 +1,35 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+@charset "UTF-8";
 
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+:root .theme_dark {
+	--page-background-color: #000028;
+	--header-background-image: url(../images/cover-image-dark.png);
+
+	--text-color: #F1B2CE;
+	--header-color: #FF0070;
+	--decorated-zone-title-color: #db00ff;
+	--decorated-zone-title-shadow-color: #FF0070;
+	--title-decor-color: #000028;
+	--title-decor-background-color: #FF0070;
+	--section-title-color: #FF0070;
+
+	--button-hover-color: rgba(255, 0, 112, 0.4);
+	--border-color: var(--main-text-color);
+	--corners-color: var(--title-shadow);
+	--article-title-color: var(--background-color);
+	--link-shadow: var(--title-shadow);
+	--rec-color: var(--title-shadow);
+}
+
+@media (prefers-color-scheme: dark) {
+	.theme_auto .header.decorated-zone::after {
+		content: "REC";
+		text-indent: -35px;
+		background: radial-gradient(ellipse at 50% 50%, currentColor 21%, rgba(255, 255, 255, 0) 50%);
+	}
+}
+
+.theme_dark .header.decorated-zone::after {
+	content: "REC";
+	text-indent: -35px;
+	background: radial-gradient(ellipse at 50% 50%, currentColor 21%, rgba(255, 255, 255, 0) 50%);
 }
