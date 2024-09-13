@@ -8,7 +8,7 @@
 	background: var(--page-background-color) var(--header-background-image) no-repeat center / cover fixed;
 }
 
-a {
+.link {
 	text-decoration: none;
 	text-shadow: 2px 2px 0 var(--link-shadow-color);
 	transition: var(--transition-duration);
@@ -16,34 +16,36 @@ a {
 	outline: none;
 }
 
-a:hover {
+.link:hover {
 	color: var(--link-color);
 	border-bottom: 1px solid;
 }
 
-a:focus {
+.link:focus {
 	border: 1px solid;
 }
 
-a:focus-visible {
+.link:focus-visible {
 	outline: 1px solid var(--link-shadow-color);
 }
 
 .header {
+	height: 100vh;
+	min-height: 668px;
 	display: flex;
-	align-items: center;
+	justify-content: flex-end;
 	padding: var(--page-padding);
 }
 
 
 .header__theme-menu {
-	position: absolute;
-	top: 0;
-	right: 50%;
-	translate: 50% 0;
-	display: flex;
-	justify-content: center;
-	padding: var(--page-padding);
+position: absolute;
+top: 0;
+right: 50%;
+translate: 50% 0;
+display: flex;
+justify-content: center;
+padding: var(--page-padding);
 }
 
 .header__theme-menu-list {
@@ -90,10 +92,10 @@ a:focus-visible {
 }
 
 .header__subtitle {
-	position: absolute;
-	left: 50%;
-	right: var(--page-padding);
-	bottom: 18%;
+position: absolute;
+left: 50%;
+right: var(--page-padding);
+bottom: 18%;
 }
 
 
@@ -124,7 +126,6 @@ a:focus-visible {
 
 .decorated-zone {
 	position: relative;
-	min-height: 100vh;
 	color: var(--header-color);
 
 	&::before,
@@ -219,6 +220,8 @@ a:focus-visible {
 	position: relative;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
+	min-height: 668px;
 	padding: var(--page-padding);
 }
 
