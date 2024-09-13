@@ -30,7 +30,6 @@
 }
 
 .header {
-	position:absolute;
 	height: 100vh;
 	min-height: 668px;
 	display: flex;
