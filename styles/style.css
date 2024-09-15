@@ -181,12 +181,10 @@
 .section__article-list-why,
 .section__article-list-how {
 	grid-column: span 2;
-	gap: 20px;
 }
 
 .section__title_what {
 	grid-column: 1/1;
-	gap: 20px;
 }
 
 
@@ -196,6 +194,10 @@
 	gap: var(--offset);
 	grid-column: 1/-1;
 	grid-row: 2;
+}
+
+.article-text {
+	
 }
 
 .section__gallery-title {
@@ -253,10 +255,6 @@
 	.section__article-list-what {
 		grid-template-columns: 1fr;
 	}
-
-   .section__article-item {
-	  width: 100%;
-    }
 }
 
 @media (width < 376px) {
@@ -285,17 +283,12 @@
 		}
 	}
 
-	.section__article-item {
-	    width: 100%;
-	}
-
 	.section-gallery {
 		gap: 10px;
 	}
 
 	.section-gallery__tile.tile-2x1 {
 		grid-column: span 1;
-		min-width: 230px;
 	}
 }
 
