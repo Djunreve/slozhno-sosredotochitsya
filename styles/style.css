@@ -175,9 +175,6 @@
 .section__article-item + .section__article-item {
 	margin-top: var(--offset);
 }
-.article-text {
-	margin-bottom: 20px;
-}
 
 .section__article-list-why,
 .section__article-list-how {
