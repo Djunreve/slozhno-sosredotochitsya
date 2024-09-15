@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.body {
+.page {
 	font-family: var(--font-family);
 	font-size: var(--font-size);
 	color: var(--text-color);
@@ -70,6 +70,11 @@
 	justify-content: center;
 }
 
+.header__theme-menu-list {
+	display: flex;
+	gap: 10px;
+
+}
 
 .header__theme-menu-button {
 	display: flex;
