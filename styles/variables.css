@@ -10,13 +10,15 @@
 	--offset: 20px;
 	--page-padding: 20px;
 
-
-	--text-color: #f1b2ce;
+	--text-color: #F1B2CE;
 	--header-color: #FF0070;
-    --title-decor-color: #000028;
-    --title-decor-background-color: #FF0070;
+	--decorated-zone-title-color: #db00ff;
+	--decorated-zone-title-shadow-color: #FF0070;
+	--title-decor-color: #000028;
+	--title-decor-background-color: #FF0070;
 	--section-title-color: #FF0070;
 
+	--button-hover-color: rgba(255, 0, 112, 0.4);
 	--button-border: 1px solid transparent;
 	--article-title-color: var(--background-color);
 	--link-shadow-color: #FF0070;

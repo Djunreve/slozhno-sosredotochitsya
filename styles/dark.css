@@ -13,11 +13,8 @@
 	--section-title-color: #FF0070;
 
 	--button-hover-color: rgba(255, 0, 112, 0.4);
-	--border-color: var(--main-text-color);
 	--corners-color: var(--title-shadow);
 	--article-title-color: var(--background-color);
-	--link-shadow: var(--title-shadow);
-	--rec-color: var(--title-shadow);
 }
 
 @media (prefers-color-scheme: dark) {

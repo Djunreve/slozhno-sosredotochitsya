@@ -4,8 +4,8 @@
 	--page-background-color: #fff1f7;
 	--header-background-image: url(../images/cover-image-light.png);
 
-	--link-shadow-color: #FF8DCB;
 	--text-color: #353430;
+	--link-shadow-color: #FF8DCB;
 	--header-color: var(--text-color);
 	--decorated-zone-title-color: #FFC2E6;
 	--decorated-zone-title-shadow-color: #FF0070;
@@ -14,11 +14,8 @@
 	--section-title-color: #353430;
 
 	--button-hover-color: rgba(50, 49, 45, 0.4);
-	--border-color: var(--title-shadow);
 	--corners-color: var(--main-text-color);
 	--article-title-color: var(--main-text-color);
-	--link-shadow: var(--title-color);
-	--rec-color: var(--background-color);
 
 	@media (width < 769px) {
 		--decorated-zone-title-shadow-color: #FF8DCB;
@@ -31,7 +28,8 @@
 		--header-background-image: url(../images/cover-image-light.png);
 	
 		--text-color: #353430;
-		--header-color: var(--text-colFFor);
+		--link-shadow-color: #FF8DCB;
+		--header-color: var(--text-color);
 		--decorated-zone-title-color: #FFC2E6;
 		--decorated-zone-title-shadow-color: #FF0070;
 		--title-decor-color: #353430;
@@ -39,11 +37,8 @@
 		--section-title-color: #353430;
 	
 		--button-hover-color: rgba(50, 49, 45, 0.4);
-		--border-color: var(--title-shadow);
 		--corners-color: var(--main-text-color);
 		--article-title-color: var(--main-text-color);
-		--link-shadow: var(--title-color);
-		--rec-color: var(--background-color);
 
 		@media (width < 769px) {
 			--decorated-zone-title-shadow-color: #FF8DCB;
