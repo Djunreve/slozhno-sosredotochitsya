@@ -8,26 +8,6 @@
 	background: var(--page-background-color) var(--header-background-image) no-repeat center / cover fixed;
 }
 
-.link {
-	text-decoration: none;
-	text-shadow: 2px 2px 0 var(--link-shadow-color);
-	transition: var(--transition-duration);
-	border: 1px solid transparent;
-	outline: none;
-}
-
-.link:hover {
-	color: var(--link-color);
-	border-bottom: 1px solid;
-}
-
-.link:focus {
-	border: 1px solid;
-}
-
-.link:focus-visible {
-	outline: 1px solid var(--link-shadow-color);
-}
 
 .header {
 	display: grid;
