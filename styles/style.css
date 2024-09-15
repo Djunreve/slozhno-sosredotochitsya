@@ -30,8 +30,6 @@
 }
 
 
-
-
 .header {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -69,7 +67,7 @@
 
 	&:hover {
 		border-color: var(--button-hover-color); 
-		}
+	}
 
 	&:focus,
 	&:focus-visible {
@@ -85,7 +83,7 @@
 
 
 .header__title {
-	min-width: 0;
+	margin-left: calc(-1 * var(--page-padding));
 	text-shadow: 4px 4px 0 var(--decorated-zone-title-shadow-color);
 }
 
@@ -151,19 +149,20 @@
 
 .decorated-zone__title {
 	line-height: 0.825em;
-	font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+	font-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
 	color: var(--decorated-zone-title-color);
 }
+
 
 .section {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: var(--offset);
 	padding: 0 var(--page-padding);
-}
 
-.section + .section {
-	margin-top: 80px;
+	& + & {
+		margin-top: 80px;
+	}
 }
 
 .section__title {
@@ -172,21 +171,18 @@
 	font-weight: 700;
 }
 
-.section__article-item + .section__article-item {
-	margin-top: var(--offset);
+.article__text {
+	margin: 10px 0; /* не нашла это в задании, в макете тоже */
 }
 
-
+.section__title-what {
+	grid-column: 1/1;
+}
 
 .section__article-list-why,
 .section__article-list-how {
 	grid-column: span 2;
 }
-
-.section__title_what {
-	grid-column: 1/1;
-}
-
 
 .section__article-list-what {
 	display: grid;
@@ -194,10 +190,6 @@
 	gap: var(--offset);
 	grid-column: 1/-1;
 	grid-row: 2;
-}
-
-.article-text {
-	
 }
 
 .section__gallery-title {
@@ -237,10 +229,25 @@
 	text-shadow: 2px 2px 0 var(--decorated-zone-title-shadow-color);
 }
 
+@media (width < 1024px) {
+	.section__article-list-how,
+	.section__article-list-why {
+		grid-template-columns: 1fr 2fr;
+	}
+}
 
 @media (width < 769px) {
 	.header {
 		min-height: 1024px;
+	}
+
+	.header__title {
+		margin-left: 0;
+	}
+
+	.header__subtitle {
+		width: 100%;
+		justify-self: stretch;
 	}
 
 	.header__theme-menu {
@@ -252,8 +259,33 @@
 		flex-direction: column;
 	}
 
+	.section {
+		grid-template-columns: 1fr;
+
+		& + & {
+			margin-top: 50px;
+		}
+	}
+
+	.section__article-item + .section__article-item {
+		margin-top: var(--offset);
+	}
+
 	.section__article-list-what {
 		grid-template-columns: 1fr;
+	}
+
+	.section__article-list-how,
+	.section__article-list-why {
+		grid-template-columns: 1fr 2.06fr;
+	}
+
+	.section-gallery {
+		gap: 10px;
+	}
+
+	.section-gallery__tile.tile-2x1 {
+		grid-column: span 1;
 	}
 }
 
@@ -266,34 +298,7 @@
 		top: 10%;
 	}
 
-	.header__subtitle {
-		width: 100%;
-		justify-self: stretch;
-	}
-
 	.main {
 		margin: 40px 0;
-	}
-
-	.section {
-		grid-template-columns: 1fr;
-
-		& + & {
-			margin-top: 50px;
-		}
-	}
-
-	.section-gallery {
-		gap: 10px;
-	}
-
-	.section-gallery__tile.tile-2x1 {
-		grid-column: span 1;
-	}
-}
-
-@media (width > 376px) {
-	.header__title {
-		margin-left: calc(-1 * var(--page-padding));
 	}
 }
