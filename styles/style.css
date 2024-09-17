@@ -98,17 +98,13 @@
 	}
 
 	&:focus {
-    border-bottom: 4px currentColor inherit;
-	outline: 1px solid transparent;
 	text-decoration: none;
 	}
 
 	&:focus-visible {
-		border-bottom: 4px currentColor inherit;
-		outline: 1px solid transparent;
-		text-decoration: underline;
-	
-		
+	border-bottom: 4px currentColor inherit;
+	outline: 1px solid transparent;
+	text-decoration: underline;
 	}
 }
 
