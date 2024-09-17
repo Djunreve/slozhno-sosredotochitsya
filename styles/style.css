@@ -161,6 +161,10 @@
 .section__article-list-why,
 .section__article-list-how {
 	grid-column: span 2;
+
+	.section__article-item + .section__article-item {
+		margin-top: var(--offset);
+	}
 }
 
 .section__article-title {
@@ -190,8 +194,8 @@
 	grid-row: 2;
 }
 
-.article__text {
-	margin: 10px 0; /* не нашла это в задании, в макете тоже */
+.article__text + .article__text {
+	margin-top: 10px; /* не нашла это в задании, в макете тоже */
 }
 
 
@@ -269,10 +273,6 @@
 		& + & {
 			margin-top: 50px;
 		}
-	}
-
-	.section__article-item + .section__article-item {
-		margin-top: var(--offset);
 	}
 
 	.section__article-list-what {
