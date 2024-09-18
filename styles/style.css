@@ -97,8 +97,8 @@
 
 	&:focus,
 	&:focus-visible {
-		text-decoration: underline;
-		border-color: transparent;
+		border-bottom: 1px solid;
+		
 	}
 }
 
