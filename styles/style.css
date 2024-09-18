@@ -250,6 +250,10 @@
 		grid-column: auto;
 		grid-template-columns: 1fr 2fr;
 	}
+
+	.section__article-list-what {
+		grid-template-columns: 1fr;
+	}
 }
 
 
